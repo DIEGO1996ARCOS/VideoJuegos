@@ -28,11 +28,11 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
 
     const enviarDatos = () => {
         if (validaCampo()) {
-            if (consola.length === 1) {
-                juego.idConsola = consola[0].id
+            if (juego.idConsola === 0) {
+                juego.idConsola = document.getElementById("idConsola").value;
             }
-            if (genero.length === 1) {
-                juego.idGenero = genero[0].id
+            if (juego.idGenero === 0) {
+                juego.idGenero = document.getElementById("idGenero").value;
             }
 
             if (juego.id == 0) {
@@ -117,7 +117,7 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
                     <FormGroup>
                         <Label>Consola</Label>
                         {/*<Input type="select" onChange={(e) => actualizarJuego(e)} name={juego.id == 0 ? "idConsola" : "idConsolaSelect"} value={juego.id == 0 ? juego.idConsola : juego.idConsolaSelect}>*/}
-                        <Input type="select" onChange={(e) => actualizarJuego(e)} name="idConsola" value={juego.idConsola}>
+                        <Input type="select" onChange={(e) => actualizarJuego(e)} name="idConsola" id="idConsola" value={juego.idConsola}>
 
                             {
                                 (consola.length < 1) ? (
@@ -137,7 +137,7 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
                     <FormGroup>
                         <Label>G&#233;nero</Label>
                         {/*<Input type="select" onChange={(e) => actualizarJuego(e)} name={juego.id == 0 ? "idGenero" : "idGeneroSelect"} value={juego.id == 0 ? juego.idGenero : juego.idGeneroSelect}>*/}
-                        <Input type="select" onChange={(e) => actualizarJuego(e)} name="idGenero" value={juego.idGenero}>
+                        <Input type="select" onChange={(e) => actualizarJuego(e)} name="idGenero" id="idGenero" value={juego.idGenero}>
                             {
                                 (genero.length < 1) ? (
                                     <option>No tiene registros</option>
