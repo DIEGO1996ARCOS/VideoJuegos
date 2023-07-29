@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row, Card, CardHeader, CardBody, Button } from "reactstrap";
 import ModalGeneros from "./ModalGeneros";
 import TablaGeneros from "./TablaGeneros";
-import swal from "sweetalert";
-import { mostrarAdvertencia, mostrarMensaje, mostrarMensajeEliminar } from "./Alerts/Alerts";
+import { mostrarAdvertencia, mostrarMensaje } from "./Alerts/Alerts";
 
 
 
@@ -85,8 +84,13 @@ const Generos = () => {
         })
 
         if (response.ok) {
+
             mostrarAdvertencia("Eliminado correctamente", "success")
             mostrarListGenero();
+        }
+        else {
+            const data = await response.json()
+            mostrarMensaje(data.message, "Eliminar", "error")
         }
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6kc30bEzL3GvhV1woP6IbYPbJ131weIPKYG2IkCJD2mzn8k3U8ScXiuXEnZniKBrnOJA0RWJL62b0TpOYWFcLw==",
+  "dgSpecHash": "a6H5/V0D9psCMd9UVDz5rs7jbz33DfhWJ0BibUUoQKOPNEyMzwnY6JSxrOinYIqxktpmN22NJ0pgJ38dZjEwjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\VideoJuegoAPI\\VideoJuegoAPI.csproj",
+  "projectFilePath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\VideoJuegoAPI\\VideoJuegoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ipgon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ipgon\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

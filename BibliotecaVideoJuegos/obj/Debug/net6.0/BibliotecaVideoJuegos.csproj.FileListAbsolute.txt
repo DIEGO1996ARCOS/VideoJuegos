@@ -12,3 +12,17 @@ C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\BibliotecaVideoJuegos\obj\Debug\net6.0\r
 C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.pdb
 C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.genruntimeconfig.cache
 C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\BibliotecaVideoJuegos\obj\Debug\net6.0\ref\BibliotecaVideoJuegos.dll
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\bin\Debug\net6.0\BibliotecaVideoJuegos.deps.json
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\bin\Debug\net6.0\BibliotecaVideoJuegos.runtimeconfig.json
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\bin\Debug\net6.0\BibliotecaVideoJuegos.dll
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\bin\Debug\net6.0\BibliotecaVideoJuegos.pdb
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.csproj.AssemblyReference.cache
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.AssemblyInfoInputs.cache
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.AssemblyInfo.cs
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.csproj.CoreCompileInputs.cache
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.dll
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\refint\BibliotecaVideoJuegos.dll
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.pdb
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\BibliotecaVideoJuegos.genruntimeconfig.cache
+C:\Users\ipgon\Videos\EXAMEN_BIBLIOTECA\REPO_VIDEOJUEGO\BibliotecaVideoJuegos\obj\Debug\net6.0\ref\BibliotecaVideoJuegos.dll

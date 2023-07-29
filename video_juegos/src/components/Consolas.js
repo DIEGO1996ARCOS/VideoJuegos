@@ -85,6 +85,10 @@ const Consolas = () => {
             mostrarAdvertencia("Eliminado correctamente", "success")
             mostrarConsolas();
         }
+        else {
+            const data = await response.json()
+            mostrarMensaje(data.message, "Eliminar", "error")
+        }
 
     }
 

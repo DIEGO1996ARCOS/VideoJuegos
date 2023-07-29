@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Consolas from "../Consolas";
 import Generos from "../Generos";
 import VideoJuegos from "../VideoJuegos";
+import Home from "../Home";
 
 const NavBar = () => {
 
@@ -24,6 +25,12 @@ const NavBar = () => {
                 <NavbarToggler className="mr-2" />
                 <Collapse isOpen={true}>
                     <Nav navbar>
+                        <NavItem>
+                            <NavLink as={Link} href="/">
+                                <FontAwesomeIcon icon={faGenderless} className="mr-2" />
+                                Inicio
+                            </NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink as={Link} href="/consolas">
                                 <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
@@ -50,7 +57,7 @@ const NavBar = () => {
 
             <div>
                 <Routes>
-                    
+                    <Route path="/" element={<Home />} />
                     <Route path="/consolas" element={<Consolas />} />
                     <Route path="/generos" element={<Generos />} />
                     <Route path="/videojuegos" element={<VideoJuegos />} />

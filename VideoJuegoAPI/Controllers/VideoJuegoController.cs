@@ -28,7 +28,6 @@ namespace VideoJuegoAPI.Controllers
 
             try
             {
-                ///List<VideoJuegosViewModel> videoJuegos = new List<VideoJuegosViewModel>();
 
                 var lsVideoJuegos = _context.ViewVideoJuegos
                     .FromSqlInterpolated($"EXEC spListaVideoJuegos")

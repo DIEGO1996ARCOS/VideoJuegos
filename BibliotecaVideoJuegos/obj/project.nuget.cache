@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5YyZ1zB4W0IrrVqjcbOWsTtAugKj5CEohzWHeJ+r07dBtCLo4myF3A9HhOeClFJCq0np7dacwZh8yaMLloO7/A==",
+  "dgSpecHash": "O1CjodPtpk7D+TGRSRMDxIHbWbvSPvuGrjHM6CM8+1qADVXfRU900Z+Jbhv3sF0VBpiPoEX5gdBFmHkxSCJLtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\BibliotecaVideoJuegos\\BibliotecaVideoJuegos.csproj",
+  "projectFilePath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\BibliotecaVideoJuegos\\BibliotecaVideoJuegos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ipgon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ipgon\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

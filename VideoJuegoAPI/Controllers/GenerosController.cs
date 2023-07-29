@@ -111,14 +111,35 @@ namespace VideoJuegoAPI.Controllers
             ResposeObject response = new ResposeObject();
             try
             {
-                Genero genero = _context.Generos.Find(id);
-                _context.Generos.Remove(genero);
-                await _context.SaveChangesAsync();
+                VideoJuego video;
 
-                response.Status = 1;
-                response.Message = "Se ejecuto correctamente";
+                try
+                {
+                    video = _context.VideoJuegos.Where(c => c.IdGenero == id).Single();
+                }
+                catch
+                {
+                    video = null;
+                }
 
-                return StatusCode(StatusCodes.Status200OK, response);
+                if (video != null)
+                {
+                    response.Status = 0;
+                    response.Message = "No es posible eliminar el género, contiene videojuegos relacionados ";
+
+                    return StatusCode(StatusCodes.Status400BadRequest, response);
+                }
+                else
+                {
+                    Genero genero = _context.Generos.Find(id);
+                    _context.Generos.Remove(genero);
+                    await _context.SaveChangesAsync();
+
+                    response.Status = 1;
+                    response.Message = "Se ejecuto correctamente";
+
+                    return StatusCode(StatusCodes.Status200OK, response);
+                }  
             }
             catch (Exception ex)
             {

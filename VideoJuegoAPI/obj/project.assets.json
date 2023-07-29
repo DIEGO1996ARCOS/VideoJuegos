@@ -2461,11 +2461,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\VideoJuegoAPI\\VideoJuegoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\VideoJuegoAPI\\VideoJuegoAPI.csproj",
       "projectName": "VideoJuegoAPI",
-      "projectPath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\VideoJuegoAPI\\VideoJuegoAPI.csproj",
+      "projectPath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\VideoJuegoAPI\\VideoJuegoAPI.csproj",
       "packagesPath": "C:\\Users\\ipgon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\VideoJuegoAPI\\obj\\",
+      "outputPath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\VideoJuegoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ipgon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2487,8 +2487,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\BibliotecaVideoJuegos\\BibliotecaVideoJuegos.csproj": {
-              "projectPath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\BibliotecaVideoJuegos\\BibliotecaVideoJuegos.csproj"
+            "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\BibliotecaVideoJuegos\\BibliotecaVideoJuegos.csproj": {
+              "projectPath": "C:\\Users\\ipgon\\Videos\\EXAMEN_BIBLIOTECA\\REPO_VIDEOJUEGO\\BibliotecaVideoJuegos\\BibliotecaVideoJuegos.csproj"
             }
           }
         }
