@@ -60,7 +60,7 @@ const ModalGeneros = ({ mostrarModal, setmostrarModal, guardarGenero, editar, se
     return (
         <Modal isOpen={mostrarModal}>
             <ModalHeader>
-                {genero.id == 0 ? "Nuevo genero" : "Editar genero"}
+                {genero.id == 0 ? "Nuevo género" : "Editar género"}
             </ModalHeader>
 
             <ModalBody>

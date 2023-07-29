@@ -67,16 +67,16 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
             valor = false;
         }
         else if (juego.descripcion.trim() === "" || juego.descripcion === undefined) {
-            mostrarAdvertencia("Descripción requerido", "warning");
+            mostrarAdvertencia("DescripciÃ³n requerido", "warning");
             valor = false;
         }
         else if (juego.anio < 1) {
-            mostrarAdvertencia("Año requerido", "warning")
+            mostrarAdvertencia("AÃ±o requerido", "warning")
             valor = false;
         }
 
         else if (juego.calificacion < 1 || juego.calificacion > 10) {
-            mostrarAdvertencia("La calificación es requerida, no puede ser mayor a 10", "warning")
+            mostrarAdvertencia("La calificaciÃ³n es requerida, no puede ser mayor a 10", "warning")
             valor = false;
         }
 

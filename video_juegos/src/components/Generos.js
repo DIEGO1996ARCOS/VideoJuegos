@@ -73,7 +73,7 @@ const Generos = () => {
     }
 
     const eliminarGenero = async (id) => {
-        var respuesta = window.confirm("øDesea eliminar el gÈnero?")
+        var respuesta = window.confirm("¬øDesea eliminar el g√©nero?")
 
         if (!respuesta) {
             return;
@@ -97,7 +97,7 @@ const Generos = () => {
                     <Card>
                         
                         <CardHeader>
-                            <h5>Lista de generos</h5>
+                            <h5>Lista de g√©neros</h5>
                         </CardHeader>
                         
                         <CardBody>

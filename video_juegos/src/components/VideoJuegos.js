@@ -107,7 +107,7 @@ const VideoJuegos = () => {
 
     const eliminarJuego = async (id) => {
 
-        var respuesta = window.confirm("Desea eliminar el contacto?")
+        var respuesta = window.confirm("¿Desea eliminar el video juego?")
 
         if (!respuesta) {
             return;

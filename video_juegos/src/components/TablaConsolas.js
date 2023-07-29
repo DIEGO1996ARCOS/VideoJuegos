@@ -15,7 +15,7 @@ const TablaConsolas = ({ data, setEditar, mostrarModal, setMostrarModal, elimina
                 <tr>
                     <th>Id</th>
                     <th>Nombre</th>
-                    <th>Actions</th>
+                    <th>Acci&#243;n</th>
                 </tr>
             </thead>
             <tbody>

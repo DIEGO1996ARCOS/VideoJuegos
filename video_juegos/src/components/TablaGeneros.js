@@ -14,7 +14,7 @@ const TablaGeneros = ({ data, setEditar, mostrarModal, setmostrarModal, eliminar
                 <tr>
                     <th>Id</th>
                     <th>Nombre</th>
-                    <th>Accion</th>
+                    <th>Acci&#243;n</th>
                 </tr>
             </thead>
             <tbody>

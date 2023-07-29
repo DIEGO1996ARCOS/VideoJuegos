@@ -71,7 +71,7 @@ const Consolas = () => {
 
     const eliminarConsola = async (id) => {
 
-        var respuesta = window.confirm("Desea eliminar la consola?")
+        var respuesta = window.confirm("¿Desea eliminar la consola?")
 
         if (!respuesta) {
             return;
