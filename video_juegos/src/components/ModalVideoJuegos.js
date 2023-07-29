@@ -28,7 +28,6 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
     }
 
     const enviarDatos = () => {
-        console.log(juego);
         if (validaCampo()) {
             if (juego.idConsola === 0) {
                 juego.idConsola = document.getElementById("idConsola").value;

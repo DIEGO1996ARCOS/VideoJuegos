@@ -73,25 +73,12 @@ const Generos = () => {
     }
 
     const eliminarGenero = async (id) => {
-        var respuesta = window.confirm("Desea eliminar el contacto?")
+        var respuesta = window.confirm("¿Desea eliminar el género?")
 
         if (!respuesta) {
             return;
         }
-
-        //mostrarMensajeEliminar("Esta seguro que desea eliminar?", "Editado", "success")
-        //swal({
-        //    title: "ss",
-        //    text: "dd",
-        //    icon: "warning",
-        //    buttons: ["No", "Si"]
-        //}).then(respuesta => {
-        //    if (respuesta) {
-
-        //        swal({ text: "Eliminado correctamente", icon: "success" })
-        //    }
-        //})
-        
+  
 
         const response = await fetch("api/generos/Eliminar/" + id, {
             method: "DELETE",

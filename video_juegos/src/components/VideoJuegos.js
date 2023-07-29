@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row, Card, CardHeader, CardBody, Button } from "reactstrap";
 import ModalVideoJuego from "./ModalVideoJuegos";
-import { mostrarConsolas } from "./Consolas"
 import TablaVideoJuegos from "./TablaVideoJuegos";
 import { mostrarAdvertencia, mostrarMensaje } from "./Alerts/Alerts";
 
