@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row, Card, CardHeader, CardBody, Button } from "reactstrap";
 import ModalGeneros from "./ModalGeneros";
 import TablaGeneros from "./TablaGeneros";
+import swal from "sweetalert";
+import { mostrarAdvertencia, mostrarMensaje, mostrarMensajeEliminar } from "./Alerts/Alerts";
 
 
 
@@ -21,6 +23,7 @@ const Generos = () => {
         if (response.ok) {
             const data = await response.json()
             setGenero(data.data);
+            
         } else {
             console.log("error en la lista de genero")
         }
@@ -41,6 +44,10 @@ const Generos = () => {
         })
 
         if (response.ok) {
+            const data = await response.json()
+
+            mostrarMensaje(data.message, "Guardado", "success")
+            
             setmostrarModal(!mostrarModal);
             mostrarListGenero();
         }
@@ -56,6 +63,10 @@ const Generos = () => {
         })
 
         if (response.ok) {
+            const data = await response.json()
+
+            mostrarMensaje(data.message, "Editado", "success")
+
             setmostrarModal(!mostrarModal);
             mostrarListGenero();
         }
@@ -68,11 +79,26 @@ const Generos = () => {
             return;
         }
 
+        //mostrarMensajeEliminar("Esta seguro que desea eliminar?", "Editado", "success")
+        //swal({
+        //    title: "ss",
+        //    text: "dd",
+        //    icon: "warning",
+        //    buttons: ["No", "Si"]
+        //}).then(respuesta => {
+        //    if (respuesta) {
+
+        //        swal({ text: "Eliminado correctamente", icon: "success" })
+        //    }
+        //})
+        
+
         const response = await fetch("api/generos/Eliminar/" + id, {
             method: "DELETE",
         })
 
         if (response.ok) {
+            mostrarAdvertencia("Eliminado correctamente", "success")
             mostrarListGenero();
         }
     }
@@ -82,9 +108,11 @@ const Generos = () => {
             <Row className="mt-5">
                 <Col sm="12">
                     <Card>
+                        
                         <CardHeader>
                             <h5>Lista de generos</h5>
                         </CardHeader>
+                        
                         <CardBody>
                             <Button color="success" size="sm" onClick={() => setmostrarModal(!mostrarModal)}>Nuevo g&#233;nero</Button>
                             <TablaGeneros data={genero}
@@ -97,7 +125,6 @@ const Generos = () => {
                     </Card>
                 </Col>
             </Row>
-
 
             <ModalGeneros
                 mostrarModal={mostrarModal}

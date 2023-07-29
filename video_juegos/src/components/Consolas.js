@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row, Card, CardHeader, CardBody, Button } from "reactstrap";
+import { mostrarAdvertencia, mostrarMensaje } from "./Alerts/Alerts";
 import ModalConsolas from "./ModalConsolas";
 import TablaConsolas from "./TablaConsolas";
 
@@ -38,6 +39,10 @@ const Consolas = () => {
         })
 
         if (response.ok) {
+            const data = await response.json()
+
+            mostrarMensaje(data.message, "Guardado", "success")
+
             setMostrarModal(!mostrarModal);
             mostrarConsolas();
         }
@@ -54,6 +59,10 @@ const Consolas = () => {
         })
 
         if (response.ok) {
+            const data = await response.json()
+
+            mostrarMensaje(data.message, "Editado", "success")
+
             setMostrarModal(!mostrarModal);
             mostrarConsolas();
         }
@@ -62,7 +71,7 @@ const Consolas = () => {
 
     const eliminarConsola = async (id) => {
 
-        var respuesta = window.confirm("Desea eliminar el contacto?")
+        var respuesta = window.confirm("Desea eliminar la consola?")
 
         if (!respuesta) {
             return;
@@ -73,6 +82,7 @@ const Consolas = () => {
         })
 
         if (response.ok) {
+            mostrarAdvertencia("Eliminado correctamente", "success")
             mostrarConsolas();
         }
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, ModalFooter, Button } from "reactstrap";
+import { mostrarAdvertencia } from "./Alerts/Alerts";
 
 
 const modeloConsola = {
@@ -47,9 +48,8 @@ const ModalConsolas = ({ mostrarModal, setMostrarModal, guardarConsola, editar, 
 
     const validaCampo = () => {
         let valor = true;
-
-        if (consola.nombre === "" || consola.nombre === undefined) {
-            window.alert("Nombre requerido");
+        if (consola.nombre.trim() === "" || consola.nombre === undefined) {
+            mostrarAdvertencia("Nombre requerido", "warning")
 
             valor = false;
         }

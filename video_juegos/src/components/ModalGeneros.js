@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, ModalFooter, Button } from "reactstrap";
+import { mostrarAdvertencia } from "./Alerts/Alerts";
 
 const modelGenero = {
     id: 0,
@@ -47,8 +48,8 @@ const ModalGeneros = ({ mostrarModal, setmostrarModal, guardarGenero, editar, se
     const validaCampo = () => {
         let valor = true;
 
-        if (genero.nombre === "" || genero.nombre === undefined) {
-            window.alert("Nombre requerido");
+        if (genero.nombre.trim() === "" || genero.nombre === undefined) {
+            mostrarAdvertencia("Nombre requerido", "warning")
 
             valor = false;
         }
@@ -76,6 +77,7 @@ const ModalGeneros = ({ mostrarModal, setmostrarModal, guardarGenero, editar, se
                 <Button size="md" color="primary" className="me-2" onClick={enviarDatos}>Guardar</Button>
                 <Button size="md" color="danger" onClick={cerrarModal}>Cancelar</Button>
             </ModalFooter>
+            
 
         </Modal>
 

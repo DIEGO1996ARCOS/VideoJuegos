@@ -4,6 +4,7 @@ import { Col, Container, Row, Card, CardHeader, CardBody, Button } from "reactst
 import ModalVideoJuego from "./ModalVideoJuegos";
 import { mostrarConsolas } from "./Consolas"
 import TablaVideoJuegos from "./TablaVideoJuegos";
+import { mostrarAdvertencia, mostrarMensaje } from "./Alerts/Alerts";
 
 
 const VideoJuegos = () => {
@@ -75,6 +76,10 @@ const VideoJuegos = () => {
         })
 
         if (response.ok) {
+            const data = await response.json()
+
+            mostrarMensaje(data.message, "Guardado", "success")
+
             setMostrarModal(!mostrarModal);
             mostrarJuegos();
         }
@@ -91,6 +96,10 @@ const VideoJuegos = () => {
         })
 
         if (response.ok) {
+            const data = await response.json()
+
+            mostrarMensaje(data.message, "Editado", "success")
+
             setMostrarModal(!mostrarModal);
             mostrarJuegos();
         }
@@ -110,6 +119,7 @@ const VideoJuegos = () => {
         })
 
         if (response.ok) {
+            mostrarAdvertencia("Eliminado correctamente", "success")
             mostrarJuegos();
         }
 
@@ -118,7 +128,7 @@ const VideoJuegos = () => {
     const validaDatos = () => {
         let valida = true;
         if (consola.length < 1 || genero.length < 1) {
-            window.alert("Debe tener al menos 1 registro en el catalogo de consola/genero");
+            mostrarAdvertencia("Debe tener al menos 1 registro en el catalogo de consola/genero", "warning")
             valida = false;
         }
 

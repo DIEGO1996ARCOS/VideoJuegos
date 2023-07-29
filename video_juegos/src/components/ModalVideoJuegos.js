@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, ModalFooter, Button, Col, Row } from "reactstrap";
+import { mostrarAdvertencia } from "./Alerts/Alerts";
 
 const modelJuego = {
     id: 0,
@@ -27,6 +28,7 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
     }
 
     const enviarDatos = () => {
+        console.log(juego);
         if (validaCampo()) {
             if (juego.idConsola === 0) {
                 juego.idConsola = document.getElementById("idConsola").value;
@@ -61,21 +63,21 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
     const validaCampo = () => {
         let valor = true;
 
-        if (juego.titulo === "" || juego.titulo === undefined) {
-            window.alert("Nombre requerido");
+        if (juego.titulo.trim() === "" || juego.titulo === undefined) {
+            mostrarAdvertencia("Nombre requerido", "warning");
             valor = false;
         }
-        if (juego.descripcion === "" || juego.descripcion === undefined) {
-            window.alert("Descripción requerido");
+        else if (juego.descripcion.trim() === "" || juego.descripcion === undefined) {
+            mostrarAdvertencia("Descripción requerido", "warning");
             valor = false;
         }
-        if (juego.anio < 1) {
-            window.alert("Año requerido");
+        else if (juego.anio < 1) {
+            mostrarAdvertencia("Año requerido", "warning")
             valor = false;
         }
 
-        if (juego.calificacion < 1 || juego.calificacion > 10) {
-            window.alert("La calificación es requerida, no puede ser mayor a 10");
+        else if (juego.calificacion < 1 || juego.calificacion > 10) {
+            mostrarAdvertencia("La calificación es requerida, no puede ser mayor a 10", "warning")
             valor = false;
         }
 
@@ -92,7 +94,7 @@ const ModalVideoJuegos = ({ mostrarModal, setMostrarModal, consola, genero, guar
             <ModalBody>
                 <Form>
                     <FormGroup>
-                        <Label>T&#237;tulo</Label>
+                        <Label>T&#237;tulo*</Label>
                         <Input name="titulo" onChange={(e) => actualizarJuego(e)} value={juego.titulo} />
                     </FormGroup>
                     <FormGroup>
